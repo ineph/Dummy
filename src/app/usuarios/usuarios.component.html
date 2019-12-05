@@ -1,0 +1,7 @@
+Usuários:
+<ul style="list-style: none;" *ngFor="let item of usuariosAr">
+  <li>
+   Usuário, {{item.UserName}} (ID:{{item.ID}})
+   <a (click)="deletarUsuario(item.ID)">Apagar Registro</a>
+  </li>
+</ul>
